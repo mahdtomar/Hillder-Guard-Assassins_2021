@@ -1,0 +1,339 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0px auto;
+  text-align: center;
+  text-transform: capitalize;
+  background-image: url(/newVersion/images/background-body-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Inter', sans-serif;
+}
+p{
+  font-size: larger;
+}
+h1, h2, h3, h4{
+  font-family: "Cinzel Decorative", cursive;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+}
+hr {
+  opacity: 0;
+  width: 100%;
+  max-width: 1440px;
+}
+ul {
+  padding: 0px;
+  list-style-type: none;
+}
+ul li{
+  font-weight: 700;
+}
+
+
+/* starting nav */
+
+nav {
+  position: fixed;
+  top: 0px;
+  background-color: white;
+  width: 100%;
+  max-width: 1440px;
+  color: black;
+  text-align: right;
+  height: 40px;
+}
+nav img {
+  float: left;
+  height: 40px;
+  width: auto;
+  background-color: black;
+}
+nav ul li {
+  display: inline;
+  padding: 11.5px 0px;
+}
+nav ul li:hover {
+  transition: 0.5s;
+  background-color: rgba(184, 184, 184, 0.5);
+}
+nav ul {
+  padding-right: 20px;
+  padding-top: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 0px 10px;
+}
+/* ending nav */
+
+/* starting header */
+
+header {
+  color: black;
+  animation-name: glow;
+  font-size: large;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0px 0px 10px 0px grey;
+}
+
+header .right {
+  padding-top: 70px;
+}
+header .right {
+  line-height: 1.5;
+}
+header div {
+  width: 90%;
+}
+
+/* @keyframes glow {
+    0%{
+        text-shadow: 0px 0px 0px 0px transparent;
+    }
+    50%{
+        text-shadow: 0px 0px 7px white;
+    }
+    100%{
+        text-shadow: 0px 0px 0px 0px transparent;
+    }
+} */
+@keyframes black-glow {
+  0% {
+    box-shadow: 0px 0px 0px 0px transparent;
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 25px 0px black;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0px 0px 0px 0px transparent;
+  }
+}
+header h1 {
+  padding: 20px;
+}
+header img {
+  width: 200px;
+  height: auto;
+  padding: 0px;
+  box-shadow: 0px 0px 10px 0px grey;
+  background-color: rgb(25, 112, 47);
+  border-radius: 50%;
+  border: 2px black solid;
+  box-shadow: 0px 0px 5px 0px black;
+  margin-top: 20px;
+  animation-name: black-glow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+header .right {
+  text-align: left;
+}
+/* ending header */
+
+/* starting genaral-info */
+
+.general-info {
+  margin: 50px auto;
+  background-color: white;
+  width: 90%;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 10px 0px grey;
+  padding-left: 20px;
+}
+.general-info .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px 20px;
+}
+.general-info .grid h3 {
+  padding: 10px;
+}
+.general-info ul {
+  list-style-type: none;
+}
+.general-info h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+.general-info .right {
+  line-height: 1.5;
+}
+
+.two-columns {
+  grid-column: span 2;
+}
+.CL {
+  padding-top: 20px;
+}
+/* ending genaral-info */
+
+/* starting guild colores */
+
+.guild-colores {
+  background-color: white;
+  margin:  auto;
+  width: 90%;
+  border-radius: 20px;
+}
+.bevile {
+  width: 184px;
+  padding-bottom: 33px;
+  margin-left: 20px;
+}
+.pheo {
+  margin-right: 20px;
+  width: 175px;
+}
+/* ending guild colores */
+
+/* starting events */
+
+.events {
+  background-color: white;
+  margin: 50px auto;
+  box-shadow: 0px 0px 10px 0px grey;
+  width: 90%;
+  border-radius: 20px;
+  max-width: 1440px;
+}
+.events h2,
+h3 {
+  margin: 15px;
+}
+.events h2 {
+  padding-top: 10px;
+}
+
+.grid-events {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.events img {
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.events img:hover{
+  transform: scale(1.01);
+}
+/* ending events */
+
+/* starting giveaways */
+.giveaways {
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px grey;
+  margin: 50px auto;
+  width: 90%;
+  border-radius: 20px;
+  max-width: 1440px;
+}
+
+.giveaways h3 {
+  padding: 20px;
+}
+
+.giveaways img {
+  width: 70%;
+  margin-bottom: 20px;
+  
+}
+
+.giveaways img:hover{
+  transform: scale(1.01);
+}
+/* ending giveaways */
+
+/* starting bank */
+
+.bank{
+  background-color: white;
+  margin: 50px auto;
+  width: 90%;
+  border-radius: 20px;
+  max-width: 1440px;
+  line-height: 2;
+  box-shadow: 0px 0px 10px 0px grey;
+  text-align: center;
+}
+
+.grid-bank{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-bank div{
+  width: 90%;
+}
+/*ending bank */
+
+/* starting rules */
+
+.rules{
+  background-color: white;
+  margin: 50px auto;
+  width: 90%;
+  border-radius: 20px;
+  max-width: 1440px;
+  line-height: 2;
+  font-size: large;
+  box-shadow: 0px 0px 10px 0px grey;
+  text-align: right;
+  margin-bottom: 40px;
+}
+
+.child-rules{
+  text-align: left;
+}
+.rules h2{
+  padding: 20px;
+  text-align: center;
+}
+.rules p{
+  padding-left: 10px;
+}
+
+
+.rules button{
+  padding: 10px;
+  background-color: rgb(25, 112, 47);
+  color: white;
+  font-size: large;
+  border-radius: 5px;
+  margin: 10px;
+  font-weight: bold;
+  text-shadow: 0px 0px 2px black;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px 4px grey;
+  border: 1px solid black;
+}
+
+.rules button:hover{
+  color: black;
+  transition:0.3s ;
+}
+/* ending rules */
