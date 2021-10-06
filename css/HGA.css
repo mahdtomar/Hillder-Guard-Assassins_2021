@@ -13,7 +13,7 @@ body {
   margin: 0px auto;
   text-align: center;
   text-transform: capitalize;
-  background-image: url(/images/background-body-img.jpg);
+  background-image: url(images/background-body-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Inter', sans-serif;
